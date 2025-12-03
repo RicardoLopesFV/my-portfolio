@@ -32,7 +32,7 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 28rem; // ? 280px.
+  width: 24rem; // ? 280px.
   background-color: hsla(var(--bg-hsl), 0.95);
   backdrop-filter: blur(10px);
   border-right: 1px solid hsla(var(--text-primary-hsl), 0.05);
@@ -43,7 +43,7 @@
   &__container {
     position: relative;
     height: 100%;
-    padding: 6rem 3rem;
+    padding: 6rem 1rem 6rem 3rem;
     display: flex;
     flex-direction: column;
 
@@ -89,12 +89,10 @@
 
     &--bottom {
       gap: 1.6rem;
-      padding-top: 3rem;
-      border-top: 1px solid hsla(var(--text-primary-hsl), 0.05);
+      padding-top: 1rem;
 
       @media (max-width: $tablet) {
         padding-top: 2rem;
-        margin-top: 2rem;
       }
     }
   }
@@ -126,6 +124,7 @@
     align-items: center;
     font-size: $text-base;
     color: var(--text-primary);
+
     transition:
       transform 0.2s ease,
       color 0.2s ease;
