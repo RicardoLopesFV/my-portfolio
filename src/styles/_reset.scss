@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +12,10 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
   font-size: 1.6rem;
-  font-family: var(--font-primary);
+  font-family: v.$font-primary;
   background-color: var(--bg-color);
   color: var(--text-primary);
   line-height: 1.5;
